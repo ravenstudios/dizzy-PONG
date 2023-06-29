@@ -1,4 +1,4 @@
-import pygame.key as pgk     #period to take on part of a library
+import pygame as pgk     #period to take on part of a library
 import paddles
 from constants import *
 
@@ -24,7 +24,3 @@ class Player(paddles.Paddle):       #Player is paddle; class is the blueprint to
     def check_collision(self, ball):
         if self.rect.colliderect(ball.rect):
             ball.reverse()
-
-
-
-
